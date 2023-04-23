@@ -1,0 +1,57 @@
+
+.marked-blockquote {
+
+	@apply border-l-5px m-0 my-0.5rem pl-1.5rem pr-0.5rem py-0.1rem;
+	@apply bg-[#f1f1f1] rounded-l-12px;
+	@apply dark:text-white;
+	& * { @apply m-0; }
+}
+
+.header {
+	@apply font-extrabold m-y-i1;
+	@apply dark:text-white;
+
+	&.level-1 { font-size: 64px; }
+	&.level-2 { font-size: 48px; }
+	&.level-3 { font-size: 32px; }
+	&.level-4 { font-size: 24px; }
+	&.level-5 { font-size: 20px; }
+}
+
+.paragraph { 
+	@apply text-16px font-Roboto leading-1.5 my-5; 
+	@apply dark:text-white;
+}
+
+.marked-ordered-list {
+	@apply pl-10px list-inside mb-0;
+	@apply dark:text-white;
+	p { margin: 0px; }
+	& > .marked-list-item {
+		@apply my-7px pl-4 relative text-16px;
+
+		& > ol { @apply mt-5px mb-25px pl-0; }
+
+		&::before {
+			content: attr(data-before-content);
+			@apply flex-center wh-22px text-16px font-extrabold absolute top-1px left-0;
+		}
+
+	}
+}
+
+.marked-unordered-list {
+	list-style: none;
+	@apply pl-10px list-inside mb-0;
+	p { margin: 0px; }
+	& > .marked-list-item {
+		& > ol { @apply mt-5px mb-25px pl-0; }
+
+		@apply my-7px pl-3 relative text-16px;
+
+		&::before {
+			content: attr(data-before-content);
+			@apply flex-center wh-22px text-16px font-extrabold absolute -top-2px -left-5px;
+		}
+	}
+}

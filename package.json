@@ -11,6 +11,7 @@
   },
   "license": "MIT",
   "devDependencies": {
+    "@types/marked": "^4.0.8",
     "@types/node": "^18.11.18",
     "@unocss/preset-mini": "^0.48.0",
     "@unocss/transformer-directives": "^0.47.6",
@@ -31,9 +32,12 @@
     "@typescript-eslint/parser": "^5.48.2",
     "atomic-router": "^0.8.0",
     "atomic-router-solid": "^0.8.0",
+    "dotenv": "^16.0.3",
     "effector": "^22.4.0",
     "effector-solid": "^0.22.6",
     "history": "^5.3.0",
+    "ky": "^0.33.3",
+    "marked": "^4.3.0",
     "solid-js": "^1.6.6",
     "vite-svg-loader": "^3.6.0"
   }

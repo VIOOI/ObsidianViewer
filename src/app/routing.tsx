@@ -1,6 +1,7 @@
 
 import { appRoute } from "@pages/app";
 import { notFoundRoute } from "@pages/notFound";
+import { viewerRouter } from "@pages/viewer";
 import { createHistoryRouter, RouteInstance } from "atomic-router";
 import { createBrowserHistory } from "history";
 
@@ -11,7 +12,8 @@ type RouteType = Array<{
 }>
 
 export const routes: RouteType = [
-	{ path: "/", route: appRoute },
+	{ path: "/viewer", route: viewerRouter },
+	{ path: "/:folder*", route: appRoute },
 ];
 
 export const history = createBrowserHistory();
