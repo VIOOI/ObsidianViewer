@@ -1,8 +1,9 @@
 import { rawFileApi } from "@utils/api";
-import { chainRoute, redirect } from "atomic-router";
+import { chainRoute, createRoute, redirect } from "atomic-router";
 import { createEffect, createEvent, createStore, sample } from "effector";
 
-import { viewerRouter } from ".";
+// import { viewerRouter } from ".";
+export const viewerRouter = createRoute();
 
 export const openFile = createEvent<string>();
 export const closedFile = createEvent();

@@ -9,7 +9,6 @@ import moon from  "@public/icons/moon.svg?raw";
 
 import { useMarkdown } from "./viewer.hook";
 
-export const viewerRouter = createRoute();
 
 
 export const Viewer: Component = () => {
@@ -18,7 +17,7 @@ export const Viewer: Component = () => {
 	return ( 
 		<div class="
 			min-h-screen w-screen shadow-lg bg-light-500 flex justify-center p-5
-			dark:bg-neutral-900
+			dark:bg-neutral-900 mdviewer
 		">
 			<ToggleDarkMode light={moon} dark={sun} class="fixed top-5 right-5" />
 			<Show when={isReady()}>

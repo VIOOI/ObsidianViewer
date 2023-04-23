@@ -6,7 +6,9 @@ import { App, appRoute } from "@pages/app";
 
 import { NotFound } from "@pages/notFound";
 
-import { Viewer, viewerRouter } from "@pages/viewer";
+import { Viewer } from "@pages/viewer";
+
+import { viewerRouter } from "@pages/viewer/viewer.store";
 
 import { router } from "./routing";
 

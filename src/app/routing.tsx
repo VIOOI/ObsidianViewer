@@ -1,7 +1,7 @@
 
 import { appRoute } from "@pages/app";
 import { notFoundRoute } from "@pages/notFound";
-import { viewerRouter } from "@pages/viewer";
+import { viewerRouter } from "@pages/viewer/viewer.store";
 import { createHistoryRouter, RouteInstance } from "atomic-router";
 import { createBrowserHistory } from "history";
 
