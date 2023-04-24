@@ -64,7 +64,6 @@ const getCSSRule = (name: string): string => {
 	const filter = cssTSRules.filter( rule => {
 		return rule.rule == name;
 	});
-	console.log(filter[0].css);
 	return filter[0].css;
 };
 

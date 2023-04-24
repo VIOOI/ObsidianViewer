@@ -1,4 +1,4 @@
-import { Component, Setter, splitProps } from "solid-js";
+import { Component, splitProps } from "solid-js";
 import folderIcon from "@public/icons/folder.svg?raw";
 import { useUnit } from "effector-solid";
 import { appRoute } from "@pages/app";

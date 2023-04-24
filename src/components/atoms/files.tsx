@@ -1,4 +1,4 @@
-import { Component, Setter, splitProps } from "solid-js";
+import { Component, splitProps } from "solid-js";
 import fileIcon from "@public/icons/file.svg?raw";
 import { openFile, setName } from "@pages/viewer/viewer.store";
 
